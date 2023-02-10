@@ -1,0 +1,268 @@
+body{
+    background-color: rgb(251, 251, 88);
+}
+.p3{
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    margin-top: -5px;
+}
+.span1{
+    background-color:orange;
+    margin-right: 10px;
+}
+.span2{
+    background-color:white;
+    margin-right: 10px;
+}
+.span3{
+    background-color:green;
+}
+p{
+    text-align: center;
+}
+ol{
+    margin-left:460px ;
+}
+a{
+    color:purple;
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes box1{
+    0%{
+        transform: skewx(20deg);
+    }
+    100%{
+transform: skewX(-20deg);}  
+}
+.b1{
+    background-color: steelblue;
+    height:70px;
+    width:80px;
+    margin-left:30px;
+    
+    display: inline-block;
+    animation: box1  infinite  2s alternate;
+}
+@keyframes box2{
+    0%{
+        transform: skewY(-25deg);
+    }
+    100%{
+        transform: skewY(25deg);
+    }
+}
+.b2{
+    background-color:rgb(195, 179, 203);
+    height:70px;
+    width:80px;
+    margin-left:30px;
+    display: inline-block;
+    animation: box2 infinite 2s alternate;
+}
+@keyframes box3{
+    0%{
+        transform: rotate(180deg);
+    }
+    
+}
+.b3{
+    background-color: rgb(77, 147, 226);
+    height:80px;
+    width:80px;
+    margin-left:30px;
+    display: inline-block;
+    animation: box3  infinite 1s reverse;
+}
+@keyframes box4{
+    0%{
+        transform: scaleY(1.5);
+    }
+    100%{
+        transform: scaleY(2);
+    }
+}
+.box{
+    display: inline-block;
+}
+.b4{
+    background-color: darkcyan;
+    height:60px;
+    width:60px;
+    margin-left:30px;
+    animation: box4 infinite 3s ;
+}
+@keyframes box5 {
+    0%{
+    transform: scaleX(1.5);
+    }
+    50%{
+        transform: scaleX(2);
+        
+    }
+}
+
+
+.b5{
+    background-color: brown;
+    height:60px;
+    width:60px;
+    margin-left:50px;
+    animation: box5 infinite 3s ;
+}
+@keyframes box6{
+    0%{
+        transform:rotate(-45deg);
+
+    }
+    50%{
+        transform: rotate(45deg);
+
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+.b6{
+    background-color: rgb(69, 200, 69);
+    height: 80px;
+    width: 80px;
+    margin-left:50px;
+    animation: box6 infinite 5s ;
+}
+.ol2{
+    margin-left: 550px;
+}
+li > div{
+    background-color: rgb(75, 213, 75);
+    height: 100px;
+    width:100px;
+}
+.b8{
+    transition: height 3s,width 2s;
+}
+.b8:hover{
+    height:250px;
+    width:250px;
+}
+.b7{
+    transition: width 1s ease ;
+}
+.b7:hover{
+    width:300px;
+}
+.b9{
+    transition: width 1s linear;
+}
+.b9:hover{
+    width: 300px;
+}
+.b10{
+    transition: width 2s ease-out;
+}
+.b10:hover{
+    width: 300px;
+}
+.b11{
+    transition: width 2s ease-out;
+}
+.b11:hover{
+    width: 300px;
+}
+.b12{
+    transition: width 2s ease-in-out;
+}
+.b12:hover{
+    width: 300px;
+}
+.b13{
+    transition: width 1s linear;
+}
+.b13:hover{
+    width:300px;
+}
+@keyframes sun{
+    0%{
+        left:90%;
+    }
+    50%{
+        left:80%;
+    }
+    100%{
+        left:82%;
+    }
+}
+.sun{
+    height: 100px;
+    position: fixed;
+    left: 90%;
+    animation:sun infinite 30s forwards;
+}
+.city{
+    position: absolute;
+    top:160px;
+    height: 250px;
+    width: 150%;
+    background-repeat:repeat-x ;
+    animation: city infinite 1s linear;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-200px);
+    }
+}
+.road{
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    bottom:0px;
+    animation: road infinite 5s linear;
+}
+@keyframes road{
+    100%{
+        transform:translateX(-4000px);
+    }
+}
+.car{
+    height: 150px;
+    position: absolute;
+    left:35%;
+    top: 54%;
+}
+.wheel1,.wheel2{
+    height: 70px;
+}
+.wheel1{
+    position: absolute;
+    left:37%;
+    top:65%;
+    animation: wheel infinite 1ms;
+}
+.wheel2{
+    position: absolute;
+    left:53.5%;
+    top:65%;
+    animation: wheel infinite 1ms;
+
+}
+@keyframes wheel{
+    0%{
+        transform: rotate(360deg);
+    }
+    
+}
+.flag{
+    height: 70px;
+    width:70px;
+    position: absolute;
+    left:55%;
+    top: 54%;
+}
